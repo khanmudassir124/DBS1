@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream:dist/index.php
 <?php include('nav.php');?>
 
 
@@ -21,6 +22,44 @@
                             </div>
                         </div> -->
                         <form>
+=======
+<script>
+$(document).ready(function () {
+    $('#studsecbtn').click(function (e) {
+      e.preventDefault();
+      var sname = $('#sname').val();
+      var sname = $('#sname').val();
+      var sname = $('#sname').val();
+      var sname = $('#sname').val();
+      var sname = $('#sname').val();
+      var sname = $('#sname').val();
+      var sname = $('#sname').val(); 
+      var sname = $('#sname').val();
+      var sname = $('#sname').val();
+      var sname = $('#sname').val();
+      var sname = $('#sname').val();
+      var sname = $('#sname').val();
+      var sname = $('#sname').val();
+      var sname = $('#sname').val();
+      var sname = $('#sname').val();
+      var sname = $('#sname').val();
+      var sname = $('#sname').val();
+      $.ajax
+        ({
+          type: "POST",
+          url: "studentformreg.php",
+          data: { "name": name},
+          success: {
+            $('#studsecalert').show();
+            $('#studentsection')[0].reset();
+          }
+        });
+    });
+  });
+</script>
+                        <form action="" method="POST" id="studentsection" >
+                        <div id="studsecalert"> Data Inserted Successfully</div>
+>>>>>>> Stashed changes:stusec.php
                             <div class="form-row">
                                 <div class="col-md-6">
                                     <div class="form-group">
@@ -35,7 +74,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-row">
+                            <!-- <div class="form-row">
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label class="small mb-1" for="stfathername">Fathers Name</label>
@@ -130,6 +169,7 @@
                                 <label for="staddress">Address</label>
                                 <textarea class="form-control" id="staddress" rows="3"></textarea>
                               </div>
+<<<<<<< Updated upstream:dist/index.php
                             <button class="btn btn-primary" type="submit">Submit</button>
                         </form>  
                         <!-- <div class="card mb-4"><div class="card-body">When scrolling, the navigation stays at the top of the page. This is the end of the static navigation demo.</div></div> -->
@@ -154,3 +194,26 @@
         <script src="js/scripts.js"></script>
     </body>
 </html>
+=======
+                              <div class="col-md-3">
+                                <div class="form-group">
+                                        <label class="small mb-1 required" for="ssign">Students Signature</label>
+                                        <input class="form-control py-1" id="ssign" type="file" name='ssign' accept="image/*" />
+                                 </div>
+                              </div>
+                              <div class="col-md-3">
+                                <div class="form-group">
+                                        <label class="small mb-1 required" for="pimage">Parents Image</label>
+                                        <input class="form-control py-1" id="pimage" type="file" name='piamge' accept="image/*" />
+                                 </div>
+                              </div>
+                              <div class="col-md-3">
+                                <div class="form-group">
+                                        <label class="small mb-1 required" for="psign">Parents Signature</label>
+                                        <input class="form-control py-1" id="psign" type="file" name='psign' accept="image/*" />
+                                 </div>
+                              </div> 
+                            </div> -->
+                            <button class="btn btn-primary" id="studsecbtn" type="submit">Submit</button>
+                        </form>  
+>>>>>>> Stashed changes:stusec.php
