@@ -3,8 +3,8 @@
                             <div class="form-row">
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label class="small mb-1 required" for="stname">Staff Full Name</label>
-                                        <input class="form-control" id="sname" type="text" pattern="[a-zA-Z]+" placeholder="Enter Staff Full Name" Required/>
+                                        <label class="small mb-1 required" for="staffname">Staff Full Name</label>
+                                        <input class="form-control" id="staffname" type="text" pattern="[a-zA-Z]+" placeholder="Enter Staff Full Name" Required/>
                                     </div>
                                 </div>
                             </div>
