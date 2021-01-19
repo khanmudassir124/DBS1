@@ -1,5 +1,90 @@
+<<<<<<< Updated upstream
 
                         <form>
+=======
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+    $("#addresscheck").on("click", function(){
+         if (this.checked) { 
+                $("#stupaddress").val($("#stuaddress").val());                         
+    }
+    else {
+        $("#stupaddress").val();         
+    }
+    });
+    $('#studsecbtn').click(function(e) {
+      e.preventDefault();
+      var sname = $('#sname').val();
+      var stfathername = $('#stfathername').val();
+      var stmothername = $('#stmothername').val();
+      var stdob = $('#stdob').val();
+      var stclass = $('#stclass').val();
+      var stgender = $('#stgender').val();
+      var stustatus = $('#stustatus').val();
+      var stuadno = $('#stuadno').val();
+      var stuayear = $('#stuayear').val();
+      var stareapincode = $('#stareapincode').val();
+      var stureligion = $('#stureligion').val();
+      var stuemail = $('#stuemail').val();
+      var stupassword = $('#stupassword').val();
+      var stupemail = $('#stupemail').val();
+      var stuppassword = $('#stuppassword').val();
+      var stucontact = $('#stucontact').val();
+      var stuptcontact = $('#stuptcontact').val();
+      var stuaddress = $('#stuaddress').val();
+      var stupaddress = $('#stupaddress').val();
+      var stuimage = $('#stuimage').val();
+      var stusign = $('#stusign').val();
+      var stupimage = $('#stupimage').val();
+      var stupsign = $('#stupsign').val();
+      $.ajax({
+          type: 'POST',
+          url: "studentformreg.php",
+          data: { 
+              "sname": sname , 
+              "stfathername" : stfathername, 
+              "stmothername" : stmothername, 
+              "stdob" : stdob, 
+              "stclass" : stclass, 
+              "stgender" : stgender, 
+              "stustatus" : stustatus, 
+              "stuadno" : stuadno, 
+              "stuayear" : stuayear, 
+              "stareapincode" : stareapincode, 
+              "stureligion" : stureligion, 
+              "stuemail" : stuemail, 
+              "stupassword" : stupassword, 
+              "stupemail" : stupemail, 
+              "stuppassword" : stuppassword, 
+              "stucontact" : stucontact, 
+              "stuptcontact" : stuptcontact, 
+              "stuaddress" : stuaddress, 
+              "stupaddress" : stupaddress, 
+              "stuimage" : stuimage, 
+              "stusign" : stusign, 
+              "stupimage" : stupimage, 
+              "stupsign" : stupsign 
+            },
+          success: function(data){
+            $('#studsecalert').show(data);
+            // $('#studentsection')[0].reset();
+            $('#studsecalert').append(" " + data);
+            $("#studentsection").load("#studentsection > *");
+          }
+        });
+    });
+    // if($('#addresscheck').is(':checked')){
+    //   // ...do this for each line
+    //   $('#stuaddress').val($('#stupaddress').html());
+    // }; 
+    
+  });
+  
+</script> 
+                        <form action="" method="POST" id="studentsection" enctype="multipart/form-data" >
+                            <div id="studsecalert" style="display:none"> Inserted Successfully</div>
+>>>>>>> Stashed changes
                             <div class="form-row">
                                 <div class="col-md-12">
                                     <div class="form-group">
