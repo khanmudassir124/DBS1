@@ -37,8 +37,12 @@
                                 </p>
                             </div>
                         </div> -->
-                        <div id="stusec"> <?php include('stusec.php');?> </div>
-                        <div id="staffsec"><?php include('staffsec.php');?> </div>
+                        <div id="stusec"> 
+                            <?php include('stusec.php');?> 
+                        </div>
+                        <div id="staffsec">
+                            <?php include('staffsec.php');?> 
+                        </div>
                         <!-- <div class="card mb-4"><div class="card-body">When scrolling, the navigation stays at the top of the page. This is the end of the static navigation demo.</div></div> -->
                     </div>
                 </main>
